@@ -14,13 +14,13 @@ func main() {
 	for i,_ := range input {
 		input[i] -= '0' //  atoi
 	}
-	prev := input[len(input)-1]
+	size := len(input)
 	sum := 0
-	for _,cur  := range input {
+	for pos,cur  := range input {
+		prev := input[(pos + size - 1) % size]
 		if prev == cur {
 			sum += int(cur)
 		}
-		prev = cur
 	}
 	fmt.Printf("Sum: %d\n", sum);
 }
