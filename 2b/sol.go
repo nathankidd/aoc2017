@@ -30,8 +30,8 @@ func main() {
 		found := false
 		for dpos, denominator := range nums {
 			for _, numerator := range nums[:dpos] {
-				if numerator % denominator == 0 {
-					fmt.Printf("\t:: %d  / %d = %d\n", numerator, denominator, numerator / denominator)
+				if numerator%denominator == 0 {
+					fmt.Printf("\t:: %d  / %d = %d\n", numerator, denominator, numerator/denominator)
 					checksum += numerator / denominator
 					found = true
 					break
@@ -45,5 +45,5 @@ func main() {
 			fmt.Printf("failed: %d -> %d %s\n", nums[0], nums[len(nums)-1], scanner.Text())
 		}
 	}
-	fmt.Printf("Checksum: %d\n", checksum);
+	fmt.Printf("Checksum: %d\n", checksum)
 }

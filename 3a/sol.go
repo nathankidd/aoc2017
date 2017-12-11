@@ -19,12 +19,12 @@ func main() {
 
 	sqroot := 1
 	for {
-		if sqroot * sqroot >= dest {
+		if sqroot*sqroot >= dest {
 			break
 		}
 		sqroot += 2
 	}
-	delta := sqroot * sqroot - dest
+	delta := sqroot*sqroot - dest
 	fmt.Printf("delta: %d (%d^2) - %d =  %d\n", sqroot*sqroot, sqroot, dest, delta)
 
 	// Distance from outside edge to center

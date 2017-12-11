@@ -34,5 +34,5 @@ func main() {
 		fmt.Printf("%d -> %d: %s\n", min, max, scanner.Text())
 		checksum += max - min
 	}
-	fmt.Printf("Checksum: %d\n", checksum);
+	fmt.Printf("Checksum: %d\n", checksum)
 }
