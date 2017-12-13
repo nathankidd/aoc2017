@@ -1,3 +1,7 @@
+// TODO This solution is very suboptimal
+// There is no need to keep a 2D array, or track the x/y co-ordinates.
+// Instead, track each winding in an array, and save the previous winding.
+// Iterate the arrays linearly, tweaking behaviour when on a "corner".
 package main
 
 import "fmt"
