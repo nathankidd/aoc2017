@@ -78,6 +78,9 @@ func main() {
 			continue
 		}
 		for testkey, _ := range gmap {
+			if used[testkey] == true {
+				continue
+			}
 			a := ggmap[key]
 			b := ggmap[testkey]
 			if GroupsEqual(a, b) {//ggmap[key], ggmap[testkey]) {
